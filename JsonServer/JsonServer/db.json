@@ -1,0 +1,49 @@
+{
+  "Employees": [
+    {
+      "id": 1,
+      "name": "Zidan"
+    },
+    {
+      "id": 2,
+      "name": "Mohammed"
+    },
+    {
+      "id": 3,
+      "name": "Alaa"
+    }
+  ],
+  "Users": [
+    {
+      "name": "Adel",
+      "age": 24,
+      "id": 2,
+      "password": "1"
+    },
+    {
+      "id": 12,
+      "name": "David",
+      "age": 18
+    },
+    {
+      "id": 13,
+      "name": "Andrew",
+      "age": 18
+    },
+    {
+      "id": 14,
+      "name": "Micheal",
+      "age": 26
+    },
+    {
+      "id": 15,
+      "name": "Paul",
+      "age": 23
+    },
+    {
+      "id": 16,
+      "name": "Hi",
+      "age": 10
+    }
+  ]
+}
