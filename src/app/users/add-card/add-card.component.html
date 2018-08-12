@@ -1,0 +1,22 @@
+
+<!-- <div>
+    <p> Add Card</p>
+   <input *ngIf="!allowEdit" type="text" class="form-control" [(ngModel)]='addUserName'>
+   <input *ngIf="!allowEdit" type="text" class="form-control" [(ngModel)]='addAge'>
+ </div> -->
+ <div class="card-container d-flex justify-content-center card">
+  
+  <div class="card-body ">
+    <h4 class="card-title">Add User</h4>
+    <img class="card-img-top" src="/assets/add.jpg" alt="Card image">
+    <!-- <p class="card-text">Age: {{list.age|| 25}}</p> -->
+    <p>Name</p>
+    <input *ngIf="true" type="text" class="form-control" [(ngModel)]='userName' placeholder="Enter Name">
+    <p>Age</p>
+    <input *ngIf="true" type="number" class="form-control" [(ngModel)]='age' placeholder="Enter Age">
+    <p></p>
+    <button type="button" class="btn btn-danger" (click)="clear()">Cancel</button>
+    <button type="button" class="btn btn-success" (click)="addUser()">Add</button>
+    <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+  </div>
+</div>

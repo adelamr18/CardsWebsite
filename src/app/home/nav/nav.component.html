@@ -1,0 +1,22 @@
+
+  <nav class = "navbar navbar-expand-sm bg-dark navbar-dark" id="bootstrap-overides" >
+    <div class="navbar-collapse collapse">
+      <ul class="navbar-nav mr-auto">
+  <li  class = "nav-item" *ngFor="let item of listHome">
+            <a class="nav-link" activeRouterLink="active" [routerLink]="[item]">{{item}}</a>
+          </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a *ngIf="!logged()" class="nav-link" activeRouterLink="active" routerLink="rlogin2">Login</a>
+            </li>
+            <li>
+              <a *ngIf="logged()" class="nav-link" (click)="logout()" activeRouterLink="active" routerLink="rlogin2">Logout</a>
+            </li>
+          </ul>
+    </div>
+      </nav>
+      <div class="displays">
+      <!-- <router-outlet></router-outlet> -->
+    </div>
+    

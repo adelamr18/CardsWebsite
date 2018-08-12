@@ -1,0 +1,12 @@
+<!-- <div>yuyu</div> -->
+<div class="card-container d-flex justify-content-center card">
+  <img class="card-img-top" src="/assets/user.jpg" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">{{list.name||'SampleCard'}}</h4>
+    <p class="card-text">Age: {{list.age|| 25}}</p>
+    <input *ngIf="!allowEdit" type="text" class="form-control" [(ngModel)]='userName'>
+    <button type="button" class="btn btn-danger" (click)="leftBtnCardFn(list.id)">{{leftBtnName}}</button>
+    <button type="button" class="btn btn-success" (click)="rightBtnCardFn(list.id)">{{rightBtnName}}</button>
+    <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+  </div>
+</div>

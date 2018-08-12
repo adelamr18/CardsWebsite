@@ -1,0 +1,9 @@
+.card-img-top{
+    padding:5px;
+    margin: auto;
+}
+.card-container{
+    margin: 10px;
+    width: 230px;
+    height: 400px;
+}

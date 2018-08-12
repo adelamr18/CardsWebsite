@@ -1,0 +1,35 @@
+<!-- <div class="d-flex">ok
+
+</div> -->
+<div class="d-flex flex-wrap" >
+<app-add-card (addNewUser)="addNewUser($event)"></app-add-card>
+<app-card  [list]="c" *ngFor="let c of list" (sendEventIDCARD)="sendEventIDUSERS($event)"
+(deleteBtnCARD)="deleteBtnUSERS($event)" 
+(saveBtnCARD)="saveBtnUSERS($event)" 
+(sendNameCARDFn)="sendNameUSERS($event)" 
+></app-card>
+<!-- <app-card  ></app-card> -->
+
+</div>
+<!-- <h4>
+  {{list|json}}
+</h4> -->
+
+<!-- <div [list]="c" *ngFor="let c of list">
+    <app-card  (deleteBtnCARD)="deleteBtnUSERS($event)"></app-card>
+    <app-card (saveBtnCARD)="saveBtnUSERS($event)" ></app-card>
+    </div> -->
+ 
+
+  <!-- <table class="table table-hover">
+    <tr>
+      <th>Name</th>
+      <th>ID</th>
+      <th>Age</th>
+    </tr>
+  <tr *ngFor="let person of list">
+    <td>{{person.name}}</td>
+    <td>{{person.id}}</td>
+    <td>{{person.age}}</td>
+  </tr>
+</table> -->

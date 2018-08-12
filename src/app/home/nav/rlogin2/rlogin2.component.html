@@ -1,0 +1,30 @@
+<div class="loginContainer">
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <div class="form-group">
+  <label for="username">Username:</label>
+    <input id="username" type="text" class="form-control" formControlName="username">
+  
+<div *ngIf="!form.controls.username.valid && submitBtn" class = "alert alert-danger">
+<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+<strong>Error</strong> Please fill username field
+</div>
+
+  </div>
+  <div class="form-group">
+<label for="password">Password:</label>
+  <input id="password" type="password" class="form-control" formControlName="password">
+  
+  
+  <div *ngIf="!form.controls.password.valid && submitBtn" class = "alert alert-danger">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <strong>Error</strong> Please fill password field
+      </div>
+  </div>
+  <input type="submit" class="btn btn-primary" value="Login">
+  <div *ngIf="submitBtn && invalidData" class = "alert alert-danger">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <strong>Error</strong> Invalid username or password
+      </div>
+</form>
+</div>

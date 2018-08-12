@@ -1,0 +1,14 @@
+a{
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.navbar.navbar-expand-sm.bg-dark.navbar-dark#bootstrap-overides{
+    position:fixed;
+    top:0;
+    width:100%;
+    margin-bottom:20px;
+    z-index:2;
+}
+.displays{
+    margin-bottom: 20px;
+}
